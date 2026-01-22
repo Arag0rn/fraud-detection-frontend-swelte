@@ -11,6 +11,15 @@ const config = {
         }),
         paths: {
             base: process.env.NODE_ENV === 'production' ? '/fraud-detection-frontend-swelte' : '',
+        },
+
+        prerender: {
+            handleHttpError: ({ path, referrer, message }) => {
+                if (path.includes('favicon.svg') || path.includes('favicon.png')) {
+                    return; 
+                }
+                throw new Error(message);
+            }
         }
     }
 };

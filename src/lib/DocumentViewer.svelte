@@ -11,7 +11,7 @@
 
 <div class="container" class:fraudBorder={isFraud}>
     <div class="image-wrapper">
-        <img src="/excel-invoice-template.png" alt="Invoice" class="doc-img" />
+    <img src="{base}/excel-invoice-template-1x.png" alt="Invoice" />
 
         {#if showAnomalies}
             {#each anomalies as anomaly}
@@ -22,7 +22,8 @@
                      style:right="{anomaly.coords.right}%"
                     style:width="{anomaly.coords.width}%"
                     style:height="{anomaly.coords.height}%"
-                    tabindex="0"
+                    role="button"
+                    aria-label="Anomaly details"
                 >
                     <div class="tooltip">
                         <strong>{anomaly.info.title}</strong>
