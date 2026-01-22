@@ -83,4 +83,21 @@
         justify-content: center;
         font-family: monospace;
     }
+
+    .anomaly-box {
+    position: absolute;
+    border: 2px solid #ff4d4f;
+    background-color: rgba(255, 77, 79, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none; 
+    }
+
+    .anomaly-box:hover,
+    .anomaly-box:focus {
+        background-color: rgba(255, 77, 79, 0.4);
+        border-width: 3px;
+        box-shadow: 0 0 10px rgba(255, 77, 79, 0.8);
+        z-index: 10;
+    }
 </style>

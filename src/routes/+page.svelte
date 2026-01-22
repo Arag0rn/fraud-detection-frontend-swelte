@@ -9,7 +9,7 @@
     import { documentData } from '../data/mockData';
 
     let lang = $state('de');
-    let showAnomalies = $state(true);
+    let showAnomalies = $state(false);
     let showOCR = $state(false);
     let isFraud = $state(false);
 
