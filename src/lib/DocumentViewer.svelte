@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
 
     let { data, showAnomalies, showOCR, isFraud, currentLang } = $props();
 
