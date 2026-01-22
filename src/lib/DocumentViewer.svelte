@@ -12,7 +12,7 @@
 
 <div class="container" class:fraudBorder={isFraud}>
     <div class="image-wrapper">
-    <img src="{base}/excel-invoice-template-1x.png" alt="Invoice" />
+    <img src="{base}/excel-invoice-template.png" alt="Invoice" />
 
         {#if showAnomalies}
             {#each anomalies as anomaly}
